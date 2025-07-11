@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/button_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:paddingBottom="150dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp">
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="100dp"
+                android:background="@drawable/commandcraft"
+                android:contentDescription="@null" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="@string/app_name"
+                android:textColor="#ECECEC"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/ip"
+                android:textColor="#ECECEC"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <GridLayout
+                android:id="@+id/custom_grid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:columnCount="3"
+                android:columnOrderPreserved="false">
+
+                <!-- Default buttons (unchanged) -->
+                <Button
+                    android:id="@+id/btnCoreELEC"
+                    android:layout_width="216dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/button_background"
+                    android:text="CoreELEC"
+                    android:textAllCaps="true"
+                    android:textColor="#ECECEC" />
+
+                <Button
+                    android:id="@+id/btnRecovery"
+                    android:layout_width="216dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/button_background"
+                    android:text="Recovery"
+                    android:textAllCaps="true"
+                    android:textColor="#ECECEC" />
+
+                <Button
+                    android:id="@+id/btnShutdown"
+                    android:layout_width="216dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/button_background"
+                    android:text="Shutdown"
+                    android:textAllCaps="true"
+                    android:textColor="#ECECEC" />
+
+                <Button
+                    android:id="@+id/btnFireOS"
+                    android:layout_width="216dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/button_background"
+                    android:text="FireOS"
+                    android:textAllCaps="true"
+                    android:textColor="#ECECEC" />
+
+                <Button
+                    android:id="@+id/btnFastboot"
+                    android:layout_width="216dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/button_background"
+                    android:text="Fastboot"
+                    android:textAllCaps="true"
+                    android:textColor="#ECECEC" />
+
+                <Button
+                    android:id="@+id/btnSoftReboot"
+                    android:layout_width="216dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/button_background"
+                    android:text="Soft Reboot"
+                    android:textAllCaps="true"
+                    android:textColor="#ECECEC" />
+
+                <Button
+                    android:id="@+id/btnUSB"
+                    android:layout_width="216dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/button_background"
+                    android:text="USB Boot"
+                    android:textAllCaps="true"
+                    android:textColor="#ECECEC" />
+
+                <Button
+                    android:id="@+id/btnUpdate"
+                    android:layout_width="216dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/button_background"
+                    android:text="AML Update"
+                    android:textAllCaps="true"
+                    android:textColor="#ECECEC" />
+            </GridLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Floating button container anchored to bottom-end -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="12dp"
+        android:orientation="vertical"
+        android:gravity="end">
+
+        <Button
+            android:id="@+id/btnAddCommand"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/button_background"
+            android:text="+"
+            android:textAllCaps="false"
+            android:textColor="#ECECEC"
+            android:textSize="28sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp" />
+
+        <Button
+            android:id="@+id/btnLayoutEdit"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/button_background"
+            android:text="⇄"
+            android:paddingBottom="4dp"
+            android:textAllCaps="false"
+            android:textColor="#ECECEC"
+            android:textSize="24sp" />
+    </LinearLayout>
+</RelativeLayout>
